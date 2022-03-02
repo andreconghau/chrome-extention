@@ -1,0 +1,21 @@
+{
+    "name": "Revue FB change corlor",
+    "description": "Change BG color if access FB URL",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "icons": {
+        "16": "/images/revu.png",
+        "32": "/images/revu.png",
+        "48": "/images/revu.png",
+        "128": "/images/revu.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://*.instagram.com/"],
+        "css": ["css/style.css"],
+        "js": ["app/index.js"]
+    }]
+}

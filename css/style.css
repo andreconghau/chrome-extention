@@ -1,0 +1,19 @@
+#ig-change-color {
+    position: fixed;
+    right: 10px;
+    bottom: 50%;
+}
+
+#ig-change-color .red {
+    background-color: red;
+}
+
+#ig-change-color .green {
+    background-color: green;
+}
+
+#ig-change-color .active {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold !important;
+}
